@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
+</head>
+<body>
+    <div class="prompt">
+        <h1>{{user}}</h1>
+        <h2><a href="{{url_for('draw')}}">Draw Speed</a></h1>
+        <h3>{{draw}}/1000</h2>
+        <h2><a href="{{url_for('targets')}}">Targets</a></h1>
+        <h3>{{targets}}/20</h2>
+        <h2><a href="{{url_for('balance')}}">Balance</a></h1>
+        <h3>{{balance}}/100</h2>
+        <h2>Grade</h2>
+        <h3>{{grade}}</h3>
+        
+    </div>
+    <div id="bg"></div>
+</body>
+</html>

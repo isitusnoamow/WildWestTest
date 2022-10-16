@@ -1,0 +1,49 @@
+#bg{
+    background-image: url("./drawbg.png");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body,html{
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.prompt{
+    margin: 0 auto;
+    top: 25%;
+    width: 30%;
+    height: 50%;
+    background-color: rgb(255, 187, 114);
+    position: relative;
+    border-radius: 20px;
+    vertical-align: top;
+    padding: 20px;
+    font-size: 2rem;
+    font-family: sans-serif;
+    border: 6px solid black;
+    position: fixed;
+    left: 35%;
+    z-index: 100;
+}
+
+#start{
+    left: 35%;
+    width: 30%;
+    height: 20%;
+    font-size: xx-large;
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+    background-size: 200% auto;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px 45px;
+    cursor: pointer;
+    border: none;
+}
+
+input{
+    margin: 20px;
+}

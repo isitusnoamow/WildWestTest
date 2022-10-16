@@ -1,0 +1,107 @@
+#bg{
+    background-image: url("../static/drawbg.png");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#overlay{
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(30px);
+}
+
+#flash{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: white;
+}
+
+#after{
+    display: none;
+    position: fixed;
+    left: 35%;
+    z-index: 100;
+}
+
+#score{
+    text-align: center;
+}
+
+.prompt{
+    margin: 0 auto;
+    top: 25%;
+    width: 30%;
+    height: 50%;
+    background-color: rgb(255, 187, 114);
+    position: relative;
+    border-radius: 20px;
+    vertical-align: top;
+    padding: 20px;
+    font-size: 2rem;
+    font-family: sans-serif;
+    border: 6px solid black;
+}
+
+#start{
+    left: 35%;
+    width: 30%;
+    height: 20%;
+    position: relative;
+    font-size: xx-large;
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+    background-size: 200% auto;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px 45px;
+    cursor: pointer;
+    border: none;
+}
+
+#ready{
+    position: fixed;
+    text-align: center;
+    top: 20%;
+    width: 100%;
+    font-size: 10rem;
+    font-family: 'Bowlby One SC', Impact;
+    color: red;
+}
+
+#test{
+    font-family: 'Bowlby One SC', Impact;
+    font-size: 0px;
+}
+
+body,html{
+    height: 100%;
+    margin: 0;
+}
+
+#target{
+    position: fixed;
+    cursor: pointer;
+    width: 10%;
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}

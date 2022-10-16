@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Targets</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap">
+    <link rel="stylesheet" href="{{url_for('static', filename='target.css')}}">
+    <script src="{{url_for('static', filename='target.js')}}"></script>
+</head>
+<body>
+    <div id="overlay">
+        <div class="prompt">
+            <h1>Instructions</h1>
+            <ul>
+                <li>You will see 20 Targets</li>
+                <li>As soon as you see a target clcik it</li>
+                <li>Try to hit all the targets</li>
+            </ul>
+            <button id="start" onclick="start()">START</button>
+            <p id="test">w</p>
+        </div>
+    </div>
+    <div class="prompt" id="after">
+        <h1>Score</h1>
+        <h1 id="score">0/20</h1>
+        <form method="post">
+            <input type="text" name="score" style="display: none;" id="saved">
+            <input type="submit" value=SAVE id="start">
+        </form>
+    </div>
+    <div id="flash"></div>
+    <h1 id="ready">0/0</h1>
+    <div id="bg">
+    </div>
+</body>
+</html>
