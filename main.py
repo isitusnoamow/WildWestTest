@@ -9,7 +9,8 @@ grades = ["F","D","C","B","A","A+"]
 def index():
     if 'username' in session:
         #totals to 3000 so /600 to get 0-5
-        grade = grades[math.floor(((50*(int(session['targets']))) + 10*(int(session["targets"])) + int(session["balance"]))/600)]
+        grade = grades[math.floor(((50*(int(session['targets']))) + 10*(int(session["balance"])) + int(session["draw"]))/600)]
+        print(grade)
         return render_template("index.html",user=session['username'],draw=session['draw'],targets=session['targets'],balance=session["balance"],grade=grade)
     return redirect(url_for('login'))
 
